@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Bearing Company | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container brand-row">
+        <div class="logo">
+          <img src="logo.jpg" alt="IBC Logo" />
+        </div>
+        <nav>
+          <a class="active" href="index.html">Home</a>
+          <a href="location.html">Location</a>
+          <button class="nav-phone" id="copyPhoneBtn" type="button">
+            +91 98652 47406
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>
+            Industrial Solutions for
+            <span class="typed-word" id="typedWord">Bearings</span
+            ><span class="type-caret">|</span>
+          </h1>
+          <p>
+            Reliable supply of bearings, belts, couplings, plummer blocks and
+            essential industrial items for daily operations and maintenance.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container summary-wrap">
+          <article class="summary-row feature-bar">
+            <div class="summary-copy">
+              <h3>Rolling Bearings</h3>
+              <p>
+                Rolling bearings support rotating or oscillating machine
+                elements such as shafts and axles while reducing friction and
+                wear. They help improve precision and allow smoother operation
+                under different industrial loads.
+              </p>
+              <button class="btn-explore" type="button" data-modal="bearings">
+                Learn More
+              </button>
+            </div>
+            <div class="summary-image scroll-fade">
+              <img
+                src="images/rolling-bearings.png"
+                alt="Rolling bearings"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="summary-row reverse">
+            <div class="summary-copy scroll-fade">
+              <h3>Chains, Sprockets & Couplings</h3>
+              <p>
+                Chain drive and coupling options for smooth torque transfer in
+                industrial systems.
+              </p>
+              <button
+                class="btn-explore"
+                type="button"
+                data-modal="chains"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="summary-image scroll-fade">
+              <img
+                src="images/chains-sprockets.png"
+                alt="Chains, sprockets, and couplings"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="summary-row">
+            <div class="summary-copy scroll-fade">
+              <h3>Pillow Block Bearings</h3>
+              <p>
+                Mounted bearing units in multiple sizes for quick installation
+                and steady shaft support.
+              </p>
+              <button
+                class="btn-explore"
+                type="button"
+                data-modal="pillow-plummer"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="summary-image scroll-fade">
+              <img
+                src="images/pillow-blocks.png"
+                alt="Pillow block bearings"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="summary-row reverse">
+            <div class="summary-copy scroll-fade">
+              <h3>Plummer Blocks</h3>
+              <p>
+                Light-duty and heavy-duty plummer block options for rugged
+                industrial environments.
+              </p>
+              <button
+                class="btn-explore"
+                type="button"
+                data-modal="plummer"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="summary-image scroll-fade">
+              <img
+                src="images/plummer-blocks.png"
+                alt="Plummer blocks"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="summary-row">
+            <div class="summary-copy scroll-fade">
+              <h3>V-Belts & V-Pulleys</h3>
+              <p>
+                Power transmission setup with sectioned V-belts and matched
+                pulleys for stable operation.
+              </p>
+              <button class="btn-explore" type="button" data-modal="v-belts">
+                Learn More
+              </button>
+            </div>
+            <div class="summary-image scroll-fade">
+              <img
+                src="images/v-belts.png"
+                alt="V-belts and pulleys"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="summary-row reverse">
+            <div class="summary-copy scroll-fade">
+              <h3>Chain Pulley Blocks</h3>
+              <p>
+                Manual lifting equipment from 0.5 ton to 10 ton for workshop
+                and field handling work.
+              </p>
+              <button
+                class="btn-explore"
+                type="button"
+                data-modal="chain-pulley"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="summary-image scroll-fade">
+              <img
+                src="images/chain-pulley-blocks.png"
+                alt="Chain pulley blocks"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="summary-row">
+            <div class="summary-copy scroll-fade">
+              <h3>Other Industrial Items</h3>
+              <p>
+                Essential support items like conveyor belts, cables, gear
+                boxes, wheels and steel wire ropes.
+              </p>
+              <button
+                class="btn-explore"
+                type="button"
+                data-modal="industrial-items"
+              >
+                Learn More
+              </button>
+            </div>
+            <div class="summary-image scroll-fade">
+              <img
+                src="images/industrial-items.png"
+                alt="Assorted industrial items"
+                loading="lazy"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <div>Industrial Bearing Company | Trusted Industrial Supplier</div>
+        <div class="footer-meta">
+          <span>Made by Nova Sites</span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm0 2v.2l8 5.1 8-5.1V8H4zm16 8V10.6l-7.4 4.7a2 2 0 0 1-2.2 0L4 10.6V16h16z"
+              />
+            </svg>
+            novasiteswork@gmail.com
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.6 2h2.8a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-1.1 2.1l-1.8.9a13.5 13.5 0 0 0 6.3 6.3l.9-1.8a2 2 0 0 1 2.1-1.1l3 .5a2 2 0 0 1 1.7 2V18a2 2 0 0 1-2 2h-1A17 17 0 0 1 3 4V3a2 2 0 0 1 2-2h1.6z"
+              />
+            </svg>
+            9025759423
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="productModal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true">
+        <button class="modal-close" type="button" aria-label="Close">
+          ✕
+        </button>
+        <div class="modal-header">
+          <h3 id="modalTitle">Product Details</h3>
+          <p id="modalSubtitle">
+            Quick overview from our catalog and product list.
+          </p>
+        </div>
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4>Available Items</h4>
+            <ul id="modalItems"></ul>
+          </div>
+          <div class="modal-section" id="modalBrandsWrap">
+            <h4>Brands / Notes</h4>
+            <ul id="modalBrands"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var btn = document.getElementById("copyPhoneBtn");
+        if (!btn) return;
+        var phone = "+91 98652 47406";
+        btn.addEventListener("click", function () {
+          navigator.clipboard.writeText(phone).then(
+            function () {
+              var original = btn.textContent;
+              btn.textContent = "Copied: " + phone;
+              setTimeout(function () {
+                btn.textContent = original;
+              }, 1300);
+            },
+            function () {
+              btn.textContent = phone;
+            }
+          );
+        });
+      })();
+
+      (function () {
+        var el = document.getElementById("typedWord");
+        if (!el) return;
+        var words = [
+          "Bearings",
+          "Chains",
+          "Couplings",
+          "Power Transmission"
+        ];
+        var wordIndex = 0;
+        var charIndex = 0;
+        var deleting = false;
+
+        function tick() {
+          var currentWord = words[wordIndex];
+          if (!deleting) {
+            charIndex += 1;
+            el.textContent = currentWord.slice(0, charIndex);
+            if (charIndex === currentWord.length) {
+              deleting = true;
+              setTimeout(tick, 950);
+              return;
+            }
+            setTimeout(tick, 85);
+            return;
+          }
+
+          charIndex -= 1;
+          el.textContent = currentWord.slice(0, Math.max(charIndex, 0));
+          if (charIndex <= 0) {
+            deleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            setTimeout(tick, 220);
+            return;
+          }
+          setTimeout(tick, 55);
+        }
+
+        tick();
+      })();
+
+      (function () {
+        var targets = document.querySelectorAll(".scroll-fade");
+        if (!targets.length) return;
+
+        document.documentElement.classList.add("reveal-ready");
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.2, rootMargin: "0px 0px -8% 0px" }
+        );
+
+        targets.forEach(function (target) {
+          observer.observe(target);
+        });
+      })();
+
+      (function () {
+        var modal = document.getElementById("productModal");
+        if (!modal) return;
+        var title = document.getElementById("modalTitle");
+        var items = document.getElementById("modalItems");
+        var brands = document.getElementById("modalBrands");
+        var brandsWrap = document.getElementById("modalBrandsWrap");
+        var closeBtn = modal.querySelector(".modal-close");
+
+        var data = {
+          bearings: {
+            title: "Rolling Bearings",
+            items: [
+              "Ball Bearings",
+              "Spherical Roller Bearings",
+              "Cylindrical Roller Bearings",
+              "Needle Roller Bearings",
+              "Taper Roller Bearings"
+            ],
+            brands: ["SKF", "NBC", "FAG", "NTN", "KOYO", "ZKL", "URB"]
+          },
+          chains: {
+            title: "Chains, Sprockets & Couplings",
+            items: [
+              "Rolon Chains",
+              "Diamond Chains",
+              "M.S. Sprockets",
+              "Casting Sprockets",
+              "Industrial Couplings (All Types)"
+            ],
+            brands: ["Supply available across standard industrial sizes"]
+          },
+          "pillow-plummer": {
+            title: "Pillow Block Bearings",
+            items: ["Pillow Block Bearings (All Sizes)"],
+            brands: ["NTN", "TR", "NIS", "Other China brands"]
+          },
+          plummer: {
+            title: "Plummer Blocks",
+            items: ["Light Duty Plummer Blocks", "Heavy Duty Plummer Blocks"],
+            brands: ["Apollo", "Masta"]
+          },
+          "v-belts": {
+            title: "V-Belts & V-Pulleys",
+            items: [
+              "Fenner V-Belts",
+              "A-Section",
+              "B-Section",
+              "C-Section",
+              "D-Section",
+              "V-Pulleys"
+            ],
+            brands: ["Fenner and matching pulley options"]
+          },
+          "chain-pulley": {
+            title: "Chain Pulley Blocks",
+            items: ["Capacity: 0.5 Ton - 10 Ton"],
+            brands: ["INDEF Brand", "Other Indian brands"]
+          },
+          "industrial-items": {
+            title: "Other Industrial Items",
+            items: [
+              "Conveyor Belts",
+              "Welding Cables",
+              "Gear Boxes",
+              "Trolley Wheels",
+              "Steel Wire Ropes",
+              "Lifting Belts"
+            ],
+            brands: ["Multiple brands and sizes on request"]
+          }
+        };
+
+        function fillList(el, list) {
+          el.innerHTML = "";
+          list.forEach(function (item) {
+            var li = document.createElement("li");
+            li.textContent = item;
+            el.appendChild(li);
+          });
+        }
+
+        function openModal(key) {
+          var info = data[key];
+          if (!info) return;
+          title.textContent = info.title;
+          fillList(items, info.items || []);
+          if (info.brands && info.brands.length) {
+            brandsWrap.style.display = "";
+            fillList(brands, info.brands);
+          } else {
+            brandsWrap.style.display = "none";
+          }
+          modal.classList.add("is-open");
+          modal.setAttribute("aria-hidden", "false");
+          document.body.classList.add("modal-open");
+        }
+
+        function closeModal() {
+          modal.classList.remove("is-open");
+          modal.setAttribute("aria-hidden", "true");
+          document.body.classList.remove("modal-open");
+        }
+
+        document.querySelectorAll("[data-modal]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            openModal(btn.getAttribute("data-modal"));
+          });
+        });
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", function (event) {
+          if (event.target === modal) closeModal();
+        });
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") closeModal();
+        });
+      })();
+    </script>
+  </body>
+</html>

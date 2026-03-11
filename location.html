@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Bearing Company | Location</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container brand-row">
+        <div class="logo">
+          <img src="logo.jpg" alt="IBC Logo" />
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a class="active" href="location.html">Location</a>
+          <button class="nav-phone" id="copyPhoneBtn" type="button">
+            +91 98652 47406
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <article class="card">
+          <h2>Our Location</h2>
+          <p>
+            235, Dr Nanjapaa Rd, ATT Colony, Gopalapuram, Coimbatore, Tamil Nadu
+            641018
+          </p>
+          <div class="map-embed">
+            <iframe
+              width="650"
+              height="400"
+              src="https://maps.google.com/maps?width=650&height=400&hl=en&q=235%2C%20Dr%20Nanjapaa%20Rd%2C%20ATT%20Colony%2C%20Gopalapuram%2C%20Coimbatore%2C%20Tamil%20Nadu%20641018&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+              style="border:0;"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div style="font-size: 10px; opacity: 0.75; line-height: 10px;">
+              <a
+                href="https://www.embedgooglemap.net/?utm_source=embed&utm_medium=referral&utm_campaign=map_embed"
+                target="_blank"
+                rel="noopener"
+              >
+                Embed Google Map
+              </a>
+            </div>
+          </div>
+          <p class="phone">Call: +91 98652 47406</p>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <div>Industrial Bearing Company | Trusted Industrial Supplier</div>
+        <div class="footer-meta">
+          <span>Made by Nova Sites</span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm0 2v.2l8 5.1 8-5.1V8H4zm16 8V10.6l-7.4 4.7a2 2 0 0 1-2.2 0L4 10.6V16h16z"
+              />
+            </svg>
+            novasiteswork@gmail.com
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.6 2h2.8a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-1.1 2.1l-1.8.9a13.5 13.5 0 0 0 6.3 6.3l.9-1.8a2 2 0 0 1 2.1-1.1l3 .5a2 2 0 0 1 1.7 2V18a2 2 0 0 1-2 2h-1A17 17 0 0 1 3 4V3a2 2 0 0 1 2-2h1.6z"
+              />
+            </svg>
+            9025759423
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var btn = document.getElementById("copyPhoneBtn");
+        if (!btn) return;
+        var phone = "+91 98652 47406";
+        btn.addEventListener("click", function () {
+          navigator.clipboard.writeText(phone).then(
+            function () {
+              var original = btn.textContent;
+              btn.textContent = "Copied: " + phone;
+              setTimeout(function () {
+                btn.textContent = original;
+              }, 1300);
+            },
+            function () {
+              btn.textContent = phone;
+            }
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
